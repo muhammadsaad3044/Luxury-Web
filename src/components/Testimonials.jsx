@@ -5,6 +5,7 @@ import { Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import starImg from '../assets/images/star.png';
 
 const testimonials = [
     {
@@ -65,19 +66,18 @@ function Testimonials() {
         <section ref={ref} className="bg-[#F8F5F0] py-4 md:py-8 opacity-0">
             <div className="mx-auto max-w-7xl px-6 md:px-12">
                 <h2
-                    className="text-center italic leading-tight text-[#2C2B28]"
+                    className="flex justify-center items-center gap-4 text-center text-[18px] italic leading-[1.1] text-[#2C2B28] md:text-[42px] lg:text-[48px]"
                     style={{
                         fontFamily: "'Playfair Display', serif",
-                        fontSize: 'clamp(28px, 3.8vw, 48px)',
-                        fontWeight: 400,
                     }}
                 >
-                    <span style={{ color: '#C4A882' }}>+</span> What Our Members Say{' '}
-                    <span style={{ color: '#C4A882' }}>+</span>
+                    <img className='object-contain' src={starImg} alt="Star" />
+                    What Our Members Say
+                    <img className='object-contain' src={starImg} alt="Star" />
                 </h2>
 
                 <p
-                    className="mx-auto mt-2 max-w-lg text-center font-light text-[#6B6B6B]"
+                    className="mx-auto mt-2 max-w-lg text-center font-light text-[#2A2A2A]"
                     style={{ fontFamily: "'Jost', sans-serif", fontSize: '12px' }}
                 >
                     Seasonal designs curated with precision, balance, and timeless elegance.

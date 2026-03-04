@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import starImg from '../assets/images/star.png';
 import collection1 from '../assets/images/collectionimg1.png';
 import collection2 from '../assets/images/collectionimg2.png';
 import collection3 from '../assets/images/collectionimg3.png';
@@ -41,8 +42,10 @@ function Collection() {
   return (
     <section ref={ref} className="bg-[#F8F5F0] py-4 md:py-8 opacity-0">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
-        <h2 className="text-center text-3xl italic text-[#2C2B28] lg:text-4xl">
-          <span className="text-[#C4A882]">+</span> A Glimpse Into the Collection <span className="text-[#C4A882]">+</span>
+        <h2 className="flex justify-center items-center gap-4 text-center text-[20px] italic leading-[1.1] text-[#2C2B28] md:text-[42px] lg:text-[48px]">
+          <img className='object-contain' src={starImg} alt="Star" />
+          A Glimpse Into the Collection
+          <img className='object-contain' src={starImg} alt="Star" />
         </h2>
         <p className="mx-auto mt-2 max-w-2xl text-center text-sm font-light text-[#6B6B6B]">
           Discover seasonal signatures, elevated staples, and timeless silhouettes curated for members.

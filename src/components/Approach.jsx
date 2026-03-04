@@ -1,9 +1,10 @@
 import { useEffect, useRef } from 'react';
-
+import starImg from '../assets/images/star.png';
+import img1 from '../assets/images/9c5dc60b03607b339b2eea773bbceb9d3fd83e46.jpg';
 const cards = [
   {
     title: 'Personalized Design',
-    image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=900',
+    image: img1,
   },
   {
     title: 'Precision\nCraftsmanship',
@@ -38,8 +39,10 @@ function Approach() {
   return (
     <section id="about" ref={ref} className="bg-[#F5F0EB] py-4 md:py-8 opacity-0">
       <div className="mx-auto max-w-7xl px-6 md:px-12">
-        <h2 className="text-center text-[32px] italic leading-[1.1] text-[#2C2B28] md:text-[42px] lg:text-[48px]">
-          <span className="text-[#C4A882]">+</span>A More Personal Approach to Luxury<span className="text-[#C4A882]">+</span>
+        <h2 className="flex justify-center items-center gap-4 text-center text-[20px] italic leading-[1.1] text-[#2C2B28] md:text-[42px] lg:text-[48px]">
+          <img className='object-contain' src={starImg} alt="Star" />
+          A More Personal Approach to Luxury
+          <img className='object-contain' src={starImg} alt="Star" />
         </h2>
         <p className="mx-auto mt-2 text-center text-[11px] font-light text-[#6B6B6B] md:text-[12px]">
           Designed around you — not trends.
@@ -51,19 +54,18 @@ function Approach() {
             return (
               <article
                 key={card.title}
-                className="group relative h-72 overflow-hidden rounded-sm shadow-sm transition-transform duration-300 hover:-translate-y-1 md:h-80"
+                className="group relative h-72 overflow-hidden bg-[#665D57] rounded-sm shadow-sm transition-transform duration-300 hover:-translate-y-1 md:h-80"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <img
                   src={card.image}
                   alt={card.title}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="h-full w-full pe-5 pb-5 object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-transparent" />
                 <p
-                  className={`absolute whitespace-pre-line font-['Playfair_Display'] text-[22px] leading-[1.15] text-white md:text-[24px] ${
-                    middle ? 'left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center' : 'bottom-5 left-5'
-                  }`}
+                  className={`absolute whitespace-pre-line font-['Playfair_Display'] text-[22px] leading-[1.15] text-white md:text-[24px] ${middle ? 'left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center' : 'bottom-5 left-5'
+                    }`}
                 >
                   {card.title}
                 </p>

@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Check } from 'lucide-react';
+import starImg from '../assets/images/star.png';
 
 const pricingTiers = [
   {
@@ -60,8 +61,10 @@ function Pricing() {
   return (
     <section id="plans" ref={ref} className="bg-[#DFD0C31C] py-4 md:py-8 opacity-0">
       <div className="mx-auto max-w-7xl px-6 md:px-12">
-        <h2 className="text-center italic leading-tight text-[#2C2B28]" style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(28px, 3.8vw, 48px)', fontWeight: 400 }}>
-          <span style={{ color: '#C4A882' }}>+</span> Membership Tiers <span style={{ color: '#C4A882' }}>+</span>
+        <h2 className="flex justify-center gap-4 text-center text-[20px] italic leading-[1.1] text-[#2C2B28] md:text-[42px] lg:text-[48px]" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <img className='object-contain' src={starImg} alt="Star" />
+          Membership Tiers
+          <img className='object-contain' src={starImg} alt="Star" />
         </h2>
         <p className="mx-auto mt-3 max-w-2xl text-center text-sm font-light text-[#6B6B6B]" style={{ fontFamily: "'Jost', sans-serif" }}>
           Three curated experiences, tailored to different levels of refinement and access.

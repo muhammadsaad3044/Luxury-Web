@@ -34,11 +34,11 @@ function Hero() {
       
       <div className="relative z-10 flex min-h-screen items-center px-7 py-20 md:px-12 lg:px-20">
         <div className="max-w-3xl ms-auto">
-          <h1 className="whitespace-pre-line font-serif text-4xl leading-[1.1] text-[#000000] md:text-5xl lg:text-[56px]">
+          <h1 className="whitespace-pre-line font-serif text-4xl leading-[1.1] md:text-[#000000] text-white md:text-5xl lg:text-[56px]">
             Crafted Quarterly.{"\n"}
             Designed Personally.
           </h1>
-          <p className="mt-7 max-w-md text-[22px] font-normal leading-relaxed text-[#2A2A2A]">
+          <p className="mt-7 max-w-md text-[22px] font-normal leading-relaxed md:text-[#2A2A2A] text-white">
             A premium membership experience delivering bespoke designs tailored to your measurements, preferences, and lifestyle.
           </p>
           <button

@@ -143,8 +143,9 @@ function Process() {
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          width: 67px;
-          height: 67px;
+          width: 40px;
+          height: 40px;
+          padding: 20px;
           border-radius: 10px;
           background: rgba(255,255,255,0.55);
           font-size: 16px;
